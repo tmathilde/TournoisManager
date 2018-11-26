@@ -80,6 +80,9 @@
     <Compile Include="InfoTeam.xaml.cs">
       <DependentUpon>InfoTeam.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Mail.xaml.cs">
+      <DependentUpon>Mail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="InfoTournoi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
