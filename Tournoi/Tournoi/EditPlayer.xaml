@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tournoi.EditPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tournoi"
+        mc:Ignorable="d"
+        Title="EditPlayer" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="backEditPlayerButton" Content="Back" HorizontalAlignment="Left" Margin="707,348,0,0" VerticalAlignment="Top" Width="75" Click="backEditTeamButton_Click"/>
+        <Button x:Name="updateEditPlayerButton" Content="Update" HorizontalAlignment="Left" Margin="707,373,0,0" VerticalAlignment="Top" Width="75" Click="updateEditTeamButton_Click"/>
+        <TextBox x:Name="lastNamePlayerEditPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="97,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="firstNamePlayerEditPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="244,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="numbersEditPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="405,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="114,205,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="260,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="Numbers" HorizontalAlignment="Left" Margin="441,205,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="searchEditTeamButton" Content="Search" HorizontalAlignment="Left" Margin="426,117,0,0" VerticalAlignment="Top" Width="75" Click="searchEditTeamButton_Click"/>
+        <Label Content="Search a team" HorizontalAlignment="Left" Margin="311,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="searchEditTeamTextBox" HorizontalAlignment="Left" Height="23" Margin="289,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nationalitiesEditPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="563,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dateNaissanceEditPlayerDataPicker" HorizontalAlignment="Left" Margin="97,311,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nationalities" HorizontalAlignment="Left" Margin="590,205,0,0" VerticalAlignment="Top"/>
+        <Label Content="Brith day" HorizontalAlignment="Left" Margin="123,280,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,0.478"/>
+
+    </Grid>
+</Window>

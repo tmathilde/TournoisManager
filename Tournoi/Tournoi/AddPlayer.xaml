@@ -1,0 +1,28 @@
+﻿<Window x:Class="Tournoi.AddPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tournoi"
+        mc:Ignorable="d"
+        Title="AddPlayer" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <TextBox x:Name="namePlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="98,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="namePlayerLabel" Content="Last name" HorizontalAlignment="Left" Margin="121,120,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="firstNamePlayerLabel" Content="First name" HorizontalAlignment="Left" Margin="303,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lastNamePlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="274,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="numberPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="474,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nationalitiesPlayerTextBox" HorizontalAlignment="Left" Height="23" Margin="98,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datePlayer" HorizontalAlignment="Left" Margin="274,229,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.283,0.458"/>
+        <Label Content="Number" HorizontalAlignment="Left" Margin="508,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Post" HorizontalAlignment="Left" Margin="681,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="17.312,-2.654"/>
+        <ComboBox x:Name="postPlayerComboBox" HorizontalAlignment="Left" Margin="636,152,0,0" VerticalAlignment="Top" ItemsSource="{Binding}" Width="120" SelectionChanged="postPlayerComboBox_SelectionChanged"/>
+        <Label Content="Nationalities" HorizontalAlignment="Left" Margin="121,198,0,0" VerticalAlignment="Top"/>
+        <Label Content="Birth date" HorizontalAlignment="Left" Margin="306,198,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="681,268,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
+        <Button x:Name="addPLayerButton" Content="Add" HorizontalAlignment="Left" Margin="681,293,0,0" VerticalAlignment="Top" Width="75" Click="addPLayerButton_Click"/>
+        <ComboBox x:Name="nameTeamPlayerComboBox" HorizontalAlignment="Left" ItemsSource="{Binding}" Margin="474,229,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name of team" HorizontalAlignment="Left" Margin="489,198,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
