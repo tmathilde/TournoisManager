@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\antonin\Desktop\Tournoi\Tournoi\obj\Debug\
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\
 Tournoi
 none
 false
 DEBUG;TRACE
-C:\Users\antonin\Desktop\Tournoi\Tournoi\App.xaml
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\App.xaml
 11947470603
 
-17259607241
+211560098317
 131569487696
 AddPlayer.xaml;AddTeam.xaml;DeletePlayer.xaml;DeleteTeam.xaml;EditPlayer.xaml;EditTeam.xaml;InfoPlayer.xaml;InfoTeam.xaml;InfoTournoi.xaml;MainWindow.xaml;Menu.xaml;
 
-False
+True
 
