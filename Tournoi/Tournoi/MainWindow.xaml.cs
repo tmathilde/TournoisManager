@@ -66,5 +66,17 @@ namespace Tournoi
                 throw;
             }
         }
+
+        private void contact_Click(object sender, RoutedEventArgs e)
+        {
+            Mail mail = new Mail();
+            mail.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Match match = new Match();
+            match.Show();
+        }
     }
 }

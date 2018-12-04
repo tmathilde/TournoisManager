@@ -11,7 +11,7 @@
         <Button x:Name="addInfoTeamButton" Content="Add a player" HorizontalAlignment="Left" Margin="707,331,0,0" VerticalAlignment="Top" Width="75" Click="addInfoTeamButton_Click"/>
         <Button x:Name="editInfoTeamButton" Content="edit a player" HorizontalAlignment="Left" Margin="707,356,0,0" VerticalAlignment="Top" Width="75" Click="editInfoTeamButton_Click"/>
         <Button x:Name="deleteInfoTeamButton" Content="remove a player" HorizontalAlignment="Left" Margin="707,381,0,0" VerticalAlignment="Top" Width="75" Click="deleteInfoTeamButton_Click"/>
-        <DataGrid x:Name="dataGridInfoTeam"  HorizontalAlignment="Left" Height="121" Margin="164,162,0,0" VerticalAlignment="Top" Width="437"/>
+        <DataGrid x:Name="dataGridInfoTeam"  HorizontalAlignment="Left" Height="121" Margin="164,162,0,0" VerticalAlignment="Top" Width="437" SelectionChanged="dataGridInfoTeam_SelectionChanged"/>
         <TextBox x:Name="searchInfoTeamTextBox" HorizontalAlignment="Left" Height="26" Margin="241,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187"/>
         <Button x:Name="searchInfoTeamButton" Content="Search" HorizontalAlignment="Left" Height="26" Margin="433,131,0,0" VerticalAlignment="Top" Width="103" Click="searchInfoTeamButton_Click"/>
         <Label Content="Search a team" HorizontalAlignment="Left" Height="30" Margin="285,96,0,0" VerticalAlignment="Top" Width="98"/>

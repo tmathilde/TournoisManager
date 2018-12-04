@@ -104,3 +104,7 @@ C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tourn
 C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Tournoi.exe
 C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Tournoi.pdb
 C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Mail.g.cs
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Mail.baml
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Tournoi.csproj.ResolveComReference.cache
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Match.g.cs
+C:\Users\antonin\Desktop\PROJET EPSI\TournoiCSharp\TournoisManager\Tournoi\Tournoi\obj\Debug\Match.baml

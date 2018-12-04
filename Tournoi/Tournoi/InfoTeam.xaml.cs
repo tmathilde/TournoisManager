@@ -143,5 +143,10 @@ namespace Tournoi
                 throw;
             }
         }
+
+        private void dataGridInfoTeam_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

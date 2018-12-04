@@ -25,6 +25,11 @@ namespace Tournoi
         public InfoTournoi()
         {
             InitializeComponent();
+            string sqlProduit = RechercheProduit(searchTeamTextBox.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(sqlProduit, sql.connectionString);
+            DataTable dt = new DataTable("Team");
+            sda.Fill(dt);
+            searchTeamDataGrid.ItemsSource = dt.DefaultView;
         }
 
         private void addTeamButton_Click(object sender, RoutedEventArgs e)
@@ -94,7 +99,7 @@ namespace Tournoi
         public string RechercheProduit(string textrecherche)
         {
             sql.OpenConnection();
-            string commandesql = "SELECT nom_t as Team, point FROM Team WHERE ";
+            string commandesql = "SELECT nom_t as Team, point FROM Team WHERE";
             try
             {
                 string[] motsderecherche = textrecherche.Split(' ');
@@ -108,7 +113,7 @@ namespace Tournoi
                     }
                     else
                     {
-                        commandesql += " nom_t LIKE '%" + mot + "%'";
+                        commandesql += " nom_t LIKE '%" + mot + "%' ORDER BY point DESC";
                     }
                 }
 
@@ -130,6 +135,11 @@ namespace Tournoi
                 sql.CloseConnection();
             }
             return commandesql;
+        }
+
+        private void searchTeamDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

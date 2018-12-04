@@ -8,8 +8,8 @@ namespace Tournoi
 {
     class Data
     {
-        public static List<string> listTeam = new List<string>();
-        public static int idTeam;
-        public static int idPlayer;
+        public List<string> listTeam = new List<string>();
+        public int idTeam;
+        public int idPlayer;
     }
 }

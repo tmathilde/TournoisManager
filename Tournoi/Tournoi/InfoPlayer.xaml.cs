@@ -60,7 +60,7 @@ namespace Tournoi
         public string RechercheProduit(string textrecherche)
         {
             sql.OpenConnection();
-            string commandesql = "SELECT nom_p as Last name, prenom_p as First name, numeros as Number, nationalites as Nationalities, date_naissance as Birth day, nom_equipe as Team, libelle_poste as Post  " +
+            string commandesql = "SELECT nom_p as 'Last name', prenom_p as 'First name', numeros as Number, nationalites as Nationalities, date_naissance as Birth day, nom_equipe as Team, libelle_poste as Post  " +
                                 "FROM Player pl, Poste p WHERE pl.id_poste = p.id_poste and ";
             try
             {

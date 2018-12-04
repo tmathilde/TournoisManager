@@ -22,6 +22,7 @@ namespace Tournoi
     public partial class EditTeam : Window
     {
         Sql sql = new Sql();
+        Data data = new Data();
         public EditTeam()
         {
             InitializeComponent();
@@ -79,7 +80,7 @@ namespace Tournoi
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    Data.idTeam = reader.GetInt32(0);
+                    data.idTeam = reader.GetInt32(0);
                     nameTeamEditTeamTextBox.Text = reader.GetString(1);
                     nbTeamEditTeamTextBox.Text = reader.GetInt32(2).ToString();
                     pointTeamEditTeamTextBox.Text = reader.GetInt32(3).ToString();
@@ -105,7 +106,7 @@ namespace Tournoi
             {
                 int number = int.Parse(nbTeamEditTeamTextBox.Text);
                 int point = int.Parse(pointTeamEditTeamTextBox.Text);
-                string query = "UPDATE Team SET nom_t = '" + nameTeamEditTeamTextBox.Text + "' , nombre_joueur = " + number + ", point = '" + point + "' WHERE id_t = " + Data.idTeam;
+                string query = "UPDATE Team SET nom_t = '" + nameTeamEditTeamTextBox.Text + "' , nombre_joueur = " + number + ", point = '" + point + "' WHERE id_t = " + data.idTeam;
                 SqlCommand cmd = new SqlCommand(query, sql.con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("The update is successful");
